@@ -5,10 +5,10 @@ const Tickets = ({ ticketsdata, handleTask, }) => {
     // const ticketsdata = use(ticketsPromise)
     // onList2(tickets);
     return (
-        <div className='w-full'>
+        <div className='w-full  '>
             <h2 className='font-semibold text-2xl text-[#34485A] ml-3 md:ml-0 sm:text-center md:text-start'>Customer Tickets</h2>
             <div>
-                <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 w-[10]'>
                     {ticketsdata.map((ticket) => (
                         <div key={ticket.id}
                             onClick={() => handleTask(ticket)} className=' rounded-sm shadow-sm p-4 md:p-5'>

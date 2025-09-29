@@ -107,11 +107,11 @@ toast.success(`Ticket ${id} Complete!`);
       
       <Container>
         <Suspense>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 my-10 mt-5 md:mt-20">
-          <div className="md:col-span-2 w-full  ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-40 my-10 mt-5 md:mt-20">
+          <div className="md:col-span-2 w-full md:w-[1100px] ">
             <Tickets ticketsdata= {tickets} handleTask={handleTask} ></Tickets>
             </div>
-        <div className="md:col-span-1 w-full ">
+        <div className="md:col-span-1 w-full md:w-[400px]">
           <Taskstatus tasks={tasks} taskComplete= {taskComplete} resolvedTasks={resolvedTasks}></Taskstatus>
         </div>
         </div>
