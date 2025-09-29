@@ -13,7 +13,7 @@ const Tickets = ({ ticketsdata, handleTask, }) => {
                         <div key={ticket.id}
                             onClick={() => handleTask(ticket)} className=' rounded-sm shadow-sm p-4 md:p-5'>
                             <div className='flex justify-between items-center'>
-                                <h3 className='font-medium text-[#001931] text-base md:text-lg mr-2'>{ticket.title}</h3>
+                                <h3 className='font-medium text-[#001931] text-base md:text-lg mr-2 break-words'>{ticket.title}</h3>
                                 <div className={`flex items-center gap-0.5 md:gap-1 md:text-sm px-2 py-0.5 sm:px-3 sm:py-1 rounded-full font-semibold w-fit
                                     ${ticket.status === "Open"
                                         ? "bg-green-100 text-green-700"
@@ -35,7 +35,7 @@ const Tickets = ({ ticketsdata, handleTask, }) => {
                                         }`}>{ticket.status}</span>
                                 </div>
                             </div>
-                            <p className='text-sm mt-1 mb-3 font-normal text-[#627382]'>{ticket.description}</p>
+                            <p className='text-sm mt-1 mb-3 font-normal text-[#627382] break-words'>{ticket.description}</p>
 
                             <div className='flex flex-col sm:flex-row justify-between text-xs md:text-sm '>
                                 <div className='text-[#627382] flex-col sm:flex-row mt-2 flex sm:gap-4 gap-0'>
