@@ -2,8 +2,8 @@ import React from 'react';
 
 const Taskstatus = ({ tasks, taskComplete, resolvedTasks }) => {
     return (
-        <div className='grid grid-cols-1 gap-4 w-full'>
-            <div className=' space-y-3 p-5'>
+        <div className='grid grid-cols-1 gap-4 w-full '>
+            <div className=' space-y-5 p-5 md:p-0'>
                 <h2 className='font-semibold text-2xl text-[#34485A]'>Task Status</h2>
                 {tasks.length === 0 ? (
                     <p className='font-normal text-[#627382] text-lg shadow-md'>Select a ticket to add to Task Status</p>
@@ -26,7 +26,7 @@ const Taskstatus = ({ tasks, taskComplete, resolvedTasks }) => {
 
             </div>
 
-            <div className=' space-y-2 p-5'>
+            <div className=' space-y-5 p-5 md:p-0'>
                 <h2 className='font-semibold text-2xl text-[#34485A]'>Resolved Task</h2>
                 {resolvedTasks.length === 0 ? (
                     <p className='font-normal text-[#627382] text-lg shadow-md'>No resolved tasks yet.</p>
