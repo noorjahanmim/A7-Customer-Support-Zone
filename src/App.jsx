@@ -44,7 +44,7 @@ useEffect(() => {
   fetchData().then(data => setTickets(data));
 }, []);
 
-
+// fetch('/A7-Customer-Support-Zone/ticketsdata.json')
 // useEffect(() => {
 //     fetchData()
 //       .then(data => setTickets(data))
@@ -91,14 +91,14 @@ toast.success(`Ticket ${id} Complete!`);
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-20 p-2 md:p-0 mt-5 md:mt-20">
         <div className="relative rounded-md text-white p-7 h-40 md:h-62  bg-gradient-to-br from-[#422AD5] to-purple-400 text-center flex flex-col items-center justify-center">
-          <img src="./assets/vector1.png" alt="left" className="absolute left-0 bottom-0 w-1/3 h-full" />
-          <img src="./assets/vector2.png" alt="right" className="absolute right-0 top-0 w-1/3 h-full" />
+          <img src="/assets/vector1.png" alt="left" className="absolute left-0 bottom-0 w-1/3 h-full" />
+          <img src="/assets/vector2.png" alt="right" className="absolute right-0 top-0 w-1/3 h-full" />
           <h2 className="text-2xl">In-Progress</h2>
           <p className="font-semibold text-4xl md:text-6xl">{tasks.length}</p>
         </div>
         <div className="relative rounded-md text-white p-7 h-40 md:h-62 bg-gradient-to-br from-[#54CF68] to-[#00827A] text-center flex flex-col items-center justify-center">
-          <img src="./assets/vector1.png" alt="left" className="absolute left-0 bottom-0 w-1/3 h-full" />
-          <img src="./assets/vector2.png" alt="right" className="absolute right-0 top-0 w-1/3 h-full" />
+          <img src="/assets/vector1.png" alt="left" className="absolute left-0 bottom-0 w-1/3 h-full" />
+          <img src="/assets/vector2.png" alt="right" className="absolute right-0 top-0 w-1/3 h-full" />
           <h2 className="text-2xl">Resolved</h2>
           <p className="font-semibold text-4xl md:text-6xl">{resolvedTasks.length}</p>
         </div>
