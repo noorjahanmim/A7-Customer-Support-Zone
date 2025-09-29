@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+import {  FaFacebook, FaInstagram } from "react-icons/fa";
+import { BsTwitterX } from 'react-icons/bs';
 import { MdEmail } from "react-icons/md";
 import Container from './Container';
 
@@ -47,7 +48,7 @@ const Footer = () => {
             <h6 className="footer-title">Social Links</h6>
             <div className="grid grid-flow-col gap-4">
               <ul className='text-[#A1A1AA] mt-2'>
-                <li className='mt-2 flex items-center gap-2'><FaX />@CS — Ticket System</li>
+                <li className='mt-2 flex items-center gap-2'><BsTwitterX />@CS — Ticket System</li>
                 <li className='mt-2 flex items-center gap-2'><FaFacebook />@CS — Ticket System</li>
                 <li className='mt-2 flex items-center gap-2'><FaInstagram />@CS — Ticket System</li>
                 <li className='mt-2 flex items-center gap-2'><MdEmail />@CS — Ticket System</li>
