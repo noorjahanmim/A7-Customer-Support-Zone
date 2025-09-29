@@ -60,26 +60,26 @@ toast.success(`Ticket ${id} Complete!`);
 
 
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-20 p-2 md:p-0">
-        <div className="relative rounded-md text-white p-7 sm:auto md:h-62 bg-gradient-to-br from-[#422AD5] to-purple-400 text-center flex flex-col items-center justify-center">
-          <img src="./assets/vector1.png" alt="left" className="absolute left-0  " />
-          <img src="./assets/vector2.png" alt="right" className="absolute right-0 " />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-20 p-2 md:p-0 mt-5 md:mt-20">
+        <div className="relative rounded-md text-white p-7 h-40 md:h-62  bg-gradient-to-br from-[#422AD5] to-purple-400 text-center flex flex-col items-center justify-center">
+          <img src="./assets/vector1.png" alt="left" className="absolute left-0 bottom-0 w-1/3 h-full" />
+          <img src="./assets/vector2.png" alt="right" className="absolute right-0 top-0 w-1/3 h-full" />
           <h2 className="text-2xl">In-Progress</h2>
-          <p className="font-semibold text-6xl">{tasks.length}</p>
+          <p className="font-semibold text-4xl md:text-6xl">{tasks.length}</p>
         </div>
-        <div className="relative rounded-md text-white p-7 sm:auto md:h-62 bg-gradient-to-br from-[#54CF68] to-[#00827A] text-center flex flex-col items-center justify-center">
-          <img src="./assets/vector1.png" alt="left" className="absolute left-0 " />
-          <img src="./assets/vector2.png" alt="right" className="absolute right-0 " />
+        <div className="relative rounded-md text-white p-7 h-40 md:h-62 bg-gradient-to-br from-[#54CF68] to-[#00827A] text-center flex flex-col items-center justify-center">
+          <img src="./assets/vector1.png" alt="left" className="absolute left-0 bottom-0 w-1/3 h-full" />
+          <img src="./assets/vector2.png" alt="right" className="absolute right-0 top-0 w-1/3 h-full" />
           <h2 className="text-2xl">Resolved</h2>
-          <p className="font-semibold text-6xl">{resolvedTasks.length}</p>
+          <p className="font-semibold text-4xl md:text-6xl">{resolvedTasks.length}</p>
         </div>
       </div>
       </Container>
       
       <Container>
         <Suspense>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-40 my-10">
-          <div className="md:col-span-2 w-full md:w-[1100px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-40 my-10 mt-5 md:mt-20">
+          <div className="md:col-span-2 w-full md:w-[1100px] ">
             <Tickets ticketsdata= {tickets} handleTask={handleTask} ></Tickets>
             </div>
         <div className="md:col-span-1 w-full md:w-[400px]">

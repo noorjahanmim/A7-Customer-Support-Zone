@@ -6,7 +6,7 @@ import Container from './Container';
 
 const Footer = () => {
   return (
-    <div className='bg-black text-white'>
+    <div className='bg-black text-white md:mt-20'>
       <Container>
         <footer className="footer sm:footer-horizontal bg-base-200 text-base-content py-10 md:py-20 grid grid-cols-1 md:grid-cols-6 gap-8 p-4 md:p-0">
           <nav className='text-base-content md:col-span-2'>

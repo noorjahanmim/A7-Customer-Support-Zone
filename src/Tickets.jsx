@@ -6,7 +6,7 @@ const Tickets = ({ ticketsdata, handleTask, }) => {
     // onList2(tickets);
     return (
         <div className='w-full  '>
-            <h2 className='font-semibold text-2xl text-[#34485A] ml-3 md:ml-0 sm:text-center'>Customer Tickets</h2>
+            <h2 className='font-semibold text-2xl text-[#34485A] ml-3 md:ml-0 sm:text-center md:text-start'>Customer Tickets</h2>
             <div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 w-[10]'>
                     {ticketsdata.map((ticket) => (
