@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // eslint-disable-next-line no-undef
+   
   plugins: [react(), tailwindcss()],
+  base: "/A7-Customer-Support-Zone/",
 })
