@@ -33,7 +33,7 @@ const Taskstatus = ({ tasks, taskComplete, resolvedTasks }) => {
                 ) : (
                     <ul className='space-y-3'>
                         {resolvedTasks.map((task) => (
-                        <li key={task.id} className='p-3 bg-white rounded-md shadow-sm flex justify-between items-center w-full'>
+                        <li key={task.id} className='p-4 bg-white rounded-md shadow-sm flex justify-between items-center w-full'>
                             <span>{task.title}</span>
                         </li>
                         ))}
