@@ -19,18 +19,15 @@ async function fetchData() {
     return res.json();
 }
 
-//     async function fetchData() {
-//   const path = import.meta.env.DEV ? "/ticketsdata.json" : "./ticketsdata.json"; 
-//   const res = await fetch(path);
-//   return res.json();
-// }
+
 
 
 // const fetchData = async () => {
 //   const result = await fetch('/tickets.json');
 //   return result.json();
 // };
-// 11111
+// 111111111111111111111111111111111111111111111111
+
 // async function fetchData() {
 //   const res = await fetch("/ticketsdata.json");
 //   return res.json();
@@ -44,19 +41,8 @@ useEffect(() => {
   fetchData().then(data => setTickets(data));
 }, []);
 
-// fetch('/A7-Customer-Support-Zone/ticketsdata.json')
-// useEffect(() => {
-//     fetchData()
-//       .then(data => setTickets(data))
-//       .catch(err => console.error("Failed to load JSON:", err));
-//   }, []);
 
-  // useEffect(() => {
-  //   fetchData(import.meta.env.DEV ? '/ticketsdata.json' : './ticketsdata.json')   
-  //     .then(res => res.json())
-  //     .then(data => setTickets(data))
-  //     .catch(err => console.error("Failed to load JSON:", err));
-  // }, []);
+
 
 const handleTask = (ticket) => {
   if(!tasks.find(tick => tick.id === ticket.id) && !resolvedTasks.find(tick => tick.id === ticket.id)) {
